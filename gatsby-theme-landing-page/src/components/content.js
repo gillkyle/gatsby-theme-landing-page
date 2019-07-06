@@ -1,17 +1,16 @@
-import React from "react"
-
+/** @jsx jsx */
+import { jsx, Styled, Container } from "theme-ui"
 import feature from "../images/feature.png"
 import SectionHeader from "./section-header"
-import { COLORS } from "../styles/constants"
 
 const Content = () => (
-  <div style={{ padding: "4rem 1rem", textAlign: "center" }}>
+  <Container>
     <SectionHeader
       title="Minimal Features"
       description="Don't spend time ripping out unneeded plugins and bloat."
     />
     <content
-      style={{
+      sx={{
         display: "grid",
         alignItems: "center",
         justifyContent: "center",
@@ -19,17 +18,17 @@ const Content = () => (
       }}
     >
       <div>
-        <h3>What you need to Start</h3>
-        <p style={{ color: COLORS.gray }}>
+        <Styled.h3>What you need to Start</Styled.h3>
+        <Styled.p sx={{ color: "gray.1" }}>
           Includes plugins for analytics, building sitemaps, and optimizing
           images
-        </p>
+        </Styled.p>
       </div>
       <div>
         <img src={feature} alt="a blank card floating over colorful graphics" />
       </div>
     </content>
-  </div>
+  </Container>
 )
 
 export default Content

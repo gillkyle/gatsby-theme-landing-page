@@ -1,11 +1,11 @@
 import React from "react"
-
-import { COLORS } from "../styles/constants"
+/** @jsx jsx */
+import { jsx, Styled } from "theme-ui"
 
 const SectionHeader = ({ title, description }) => (
   <>
-    <h2>{title}</h2>
-    <p style={{ color: COLORS.mediumGray }}>{description}</p>
+    <Styled.h2>{title}</Styled.h2>
+    <Styled.p sx={{ color: "gray.0" }}>{description}</Styled.p>
   </>
 )
 

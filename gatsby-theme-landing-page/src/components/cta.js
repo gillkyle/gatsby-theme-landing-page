@@ -1,16 +1,16 @@
-import React from "react"
-
+/** @jsx jsx */
+import { jsx, Container } from "theme-ui"
 import Button from "../components/button"
 import SectionHeader from "./section-header"
 
 const CallToAction = () => (
-  <div style={{ padding: "4rem 1rem", textAlign: "center" }}>
+  <Container>
     <SectionHeader
       title="Stay Updated"
       description="Give a final call to action because that's what the cool kids are doing."
     />
     <Button>Get Early Access</Button>
-  </div>
+  </Container>
 )
 
 export default CallToAction

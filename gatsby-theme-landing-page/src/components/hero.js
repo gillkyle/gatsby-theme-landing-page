@@ -1,6 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
-import PropTypes from "prop-types"
+import { jsx, Styled, Container } from "theme-ui"
 
 import Button from "../components/button"
 import headerImage from "../images/header.png"
@@ -8,16 +7,15 @@ import MockupContent from "./image"
 import mockupFrame from "../images/mockup-frame.png"
 
 const Hero = () => (
-  <section
+  <Container
     sx={{
       display: "flex",
       alignItems: "center",
       flexDirection: "column",
-      padding: "4rem 1rem",
     }}
   >
     <div
-      style={{
+      sx={{
         backgroundImage: `url(${headerImage})`,
         position: "absolute",
         top: 0,
@@ -27,18 +25,18 @@ const Hero = () => (
         opacity: 0.5,
       }}
     />
-    <h1 style={{ textAlign: "center" }}>Landing Page Starter</h1>
-    <p style={{ textAlign: "center", maxWidth: 440 }}>
+    <Styled.h1 sx={{ textAlign: "center" }}>Landing Page Starter</Styled.h1>
+    <Styled.p sx={{ textAlign: "center", maxWidth: 440 }}>
       This landing page looks great on all devices and is minimal in design. Add
       what you want and deploy.
-    </p>
+    </Styled.p>
     <Button>Get Early Access</Button>
-    <div style={{ margin: 60, width: `250px`, position: "relative" }}>
-      <div style={{ clipPath: "inset(2% 5% round 2% 5%)" }}>
+    <div sx={{ margin: 60, width: `250px`, position: "relative" }}>
+      <div sx={{ clipPath: "inset(2% 5% round 2% 5%)" }}>
         <MockupContent />
       </div>
       <div
-        style={{
+        sx={{
           position: "absolute",
           width: "250px",
           top: 0,
@@ -50,7 +48,7 @@ const Hero = () => (
         />
       </div>
     </div>
-  </section>
+  </Container>
 )
 
 export default Hero
