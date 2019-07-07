@@ -21,7 +21,7 @@ const Hero = () => {
       }
     }
   `)
-  console.log(hero)
+
   return (
     <Container
       sx={{
