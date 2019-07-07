@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-landing-page",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "main": "index.js",
   "description": "A simple theme to create a minimal landing page with Gatsby",

@@ -1,0 +1,14 @@
+- hero:
+    header: Landing Page Shadowed
+    subheader: This landing page looks great on all devices and is minimal in design. Add what you want and deploy.
+    button_text: Get Early Access
+  content:
+    header: Minimal Features
+    subheader: Don't spend time ripping out unneeded plugins and bloat.
+    sections:
+      - title: What you need to Start
+        description: Includes plugins for analytics, building sitemaps, and optimizing images
+  call_to_action:
+    header: Stay Updated
+    subheader: Give a final call to action because that's what the cool kids are doing.
+    button_text: Get Early Access
