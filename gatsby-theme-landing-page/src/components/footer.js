@@ -1,38 +1,43 @@
 /** @jsx jsx */
 import { jsx, Footer as ThemeFooter } from "theme-ui"
 
-import { COLORS } from "../styles/constants"
+const Separator = () => <div sx={{ margin: "2" }}>·</div>
 
 const Footer = ({ siteTitle }) => (
   <ThemeFooter
-    style={{
-      padding: "1rem",
-      backgroundColor: COLORS.lightGray,
+    sx={{
+      backgroundColor: "gray.3",
     }}
   >
     <div
-      style={{
-        display: "grid",
+      sx={{
+        padding: "4",
+        maxWidth: "max",
+        width: "100%",
+        margin: "0 auto",
+        fontSize: "2",
+        display: "flex",
         alignItems: "center",
-        justifyContent: "space-between",
-        gridTemplateColumns: "repeat(auto-fit, minmax(200px, 240px))",
-        padding: "1rem 2rem",
-        fontSize: ".85rem",
+        justifyContent: "center",
+        flexDirection: "row",
+        color: "gray.1",
+        fontWeight: 700,
       }}
     >
-      <div style={{ color: COLORS.blue, fontWeight: 700 }}>
-        <a
-          style={{ textDecoration: "none" }}
-          href="https://github.com/gillkyle/gatsby-starter-landing-page"
-        >
-          Contact Us
-        </a>
-      </div>
-      <div style={{ color: COLORS.gray }}>
+      <a
+        sx={{ textDecoration: "none", color: "gray.1" }}
+        href="https://github.com/gillkyle/gatsby-starter-landing-page"
+      >
+        Contact Us
+      </a>{" "}
+      <Separator />
+      <div sx={{}}>
         © {new Date().getFullYear()}
         {` `}
         {siteTitle}
       </div>
+      <Separator />
+      Terms of Service
     </div>
   </ThemeFooter>
 )
